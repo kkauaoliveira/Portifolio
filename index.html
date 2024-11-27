@@ -1,22 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio - Kauã Oliveira</title><link rel="stylesheet" href="style.css
-    ">
+    <title>Portfólio - Kauã Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="corpo">
     <nav class="navegacao">
         <h1>Kauã Oliveira de Araujo</h1>
-        <div class="container">
+        <div class="container-head">
             <a href="#sobre" class="nav-a">Sobre</a>
-            <a href="#sobre" class="nav-a">Habilidades</a>
-            <a href="#sobre" class="nav-a">Projetos</a>
-            <a href="#sobre" class="nav-a">Contato</a>
+            <a href="#habilidades" class="nav-a">Habilidades</a>
+            <a href="#projetos" class="nav-a">Projetos</a>
+            <a href="#contato" class="nav-a">Contato</a>
         </div>
     </nav>
 
-    
+    <section id="sobre" class="secao">
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante de Ciência da Computação, apaixonado por tecnologia e programação. Tenho experiência em desenvolvimento de software e gestão de redes.</p>
+    </section>
+
+    <section id="habilidades" class="secao">
+        <h2>Habilidades</h2>
+        <div class="container-grid">
+            <div class="card">
+                <i class="fab fa-python icon"></i>
+                <h3>Python</h3>
+                <p>Programação avançada</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code icon"></i>
+                <h3>Linguagem C</h3>
+                <p>Programação de sistemas</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired icon"></i>
+                <h3>Redes</h3>
+                <p>Configuração e gerenciamento</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <h2>Projetos</h2>
+        <div class="container-grid">
+            <div class="card">
+                <h3>Projeto de Análise de Dados</h3>
+                <p>Desenvolvimento de ferramenta de análise usando Python</p>
+            </div>
+            <div class="card">
+                <h3>Script de Monitoramento de Redes</h3>
+                <p>Monitoramento em tempo real com Zabbix</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao">
+        <h2>Contato</h2>
+        <form class="form-contato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
 </body>
 </html>
